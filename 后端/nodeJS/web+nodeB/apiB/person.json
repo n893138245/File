@@ -1,0 +1,17 @@
+{
+    "Aima": {
+        "age": 23,
+        "sex": "girl",
+        "funny" : "shopping"
+    },
+    "Bobo": {
+        "age": 43,
+        "sex": "man",
+        "funny" : "smoking"
+    },
+    "Oliver": {
+        "age": 10,
+        "sex": "boy",
+        "funny" : "eat every food"
+    }
+  }

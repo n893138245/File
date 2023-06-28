@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "driver.js": "^0.9.8"
+  }
+}

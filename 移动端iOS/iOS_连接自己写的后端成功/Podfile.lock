@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (5.4.4)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - NSHash (1.2.0)
+  - SwiftyJSON (5.0.1)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4.4)
+  - Moya
+  - NSHash
+  - SwiftyJSON
+  - YYKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - NSHash
+    - SwiftyJSON
+    - YYKit
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  NSHash: 036c03781d372c288d332b512b203e7bb832e46e
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 66cd5c7134a41ff12425a6e0f7dc37d5e9e71d30
+
+COCOAPODS: 1.12.0

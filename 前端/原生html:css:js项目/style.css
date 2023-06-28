@@ -1,0 +1,628 @@
+html body{background: #E8E9EEFF; margin: 0 auto; width: 100%; font-family: "Microsoft Sans Serif"}
+/*返回顶部*/
+.backTop {
+    /*此处若使用绝对定位，那么右边浮动则无效，可能因优先级关系，也决定着坐标只有左和右管用*/
+    /*position: fixed;*/ /*重要bug：使用固定后，整个界面事件交互都都失效了。已更改，参考代码：需嵌套；*/
+}
+.backTop .backTop_img {
+    position: fixed;
+    margin: 40% 0px 0px 95%;
+    /*width: 86px;*/
+    /*height: 78px;*/
+}
+/*导航模块*/
+nav{
+    background: #1C6AC3;
+    /*实现位置固定*/
+    /*position: fixed;*/
+}
+nav .nav_logo{background: #0000; padding: 30px 20px 20px 40px; width: 12%}
+nav .nav_list{
+    /*暂时无用*/
+}
+nav .nav_list .nav_list_ul{
+    background: #0000;
+    margin: -90px 0px 0px 300px;
+    padding: 0px;
+    width: 72%;
+    /*取消圆点*/
+    list-style-type: none;
+    float: left;
+}
+nav .nav_list .nav_list_ul li{
+    padding-right: 20px;
+    float: left;
+}
+nav .nav_list .nav_list_ul a{
+    margin-left: 20px;
+    font-size: 20px;
+    color: white;
+    display: block;
+    /*取消下划线*/
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    line-height: 90px;
+}
+nav .nav_list .nav_list_ul a:hover {
+    background: green;
+}
+nav .nav_languageBtn {
+    background: #0000;
+    width: 90px;
+    line-height: 90px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    float: right;
+    margin: -90px 0px 0px 0px;
+}
+nav .nav_searchImg {
+    background: #0000;
+    width: 90px;
+    line-height: 90px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    float: right;
+    margin: -90px 98px 0px 0px;
+}
+
+/*banner图模块*/
+.banner {
+    /*暂时无用*/
+}
+.banner .banner_bg {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*padding: 0px 0px 0px 0px;*/
+    /*padding: 20px 20px 20px 20px;*/
+    /*padding: 20px 40px 20px 20px;*/
+    /*margin: 0 auto;*/
+    /*font-size: 24px;*/
+}
+.banner .banner_prevBtn {
+    background: red;
+    width: 59px;
+    height: 86px;
+    margin: -432px 0px 0px 0px;
+    /*padding: 0px 0px 0px 0px;*/
+}
+.banner .banner_nextBtn {
+    background: orange;
+    width: 59px;
+    height: 86px;
+    margin: -86px 100px 500px 97%;
+    /*此处如果设置成右边，会产生bug*/
+    /*float: right;*/
+    /*margin: -86px -16px 0px 0px;*/
+    /*padding: 0px 0px 0px 0px;*/
+
+    /*margin: -150px 0px 0px 0px;*/
+    /*padding: 0px 100px 0px 200px;*/
+
+    /*有用*/
+    /*text-align: right;*/
+    /*align: right;*/
+    /*position: rihgt;*/
+    /*fixed: right;*/
+    /*position: right;*/
+}
+.banner .banner_selectImg {
+    text-align: center;
+    /*margin-top: -200px;*/
+    margin-top: -400px;
+}
+
+.banner .banner_selectImg .banner_selectImg_1 {
+    background: gray;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.banner .banner_selectImg .banner_selectImg_2 {
+    background: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.banner .banner_selectImg .banner_selectImg_3 {
+    background: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.banner .banner_selectImg .banner_selectImg_4 {
+    background: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+/*中间内容1：公司案例*/
+.middle_case {
+    background: white;
+    margin: -6px 0px 0px 0px;
+}
+.middle_case .middle_case_titleHead {
+    background: #0000;
+    color: rgb(12 37 66);
+    margin: 210px 0px 0px 0px;
+    padding: 120px 0px 0px 340px;
+    font-size: 32px;
+}
+.middle_case .middle_case_smartShowBtn,
+.middle_case_LEDlightingBtn,
+.middle_case_smartTrafficBtn,
+.middle_case_smartSystemBtn{
+    /*background: yellow;*/
+    color: gray;
+    margin: 50px 0px 0px 315px;
+    width: 134px;
+    line-height: 44px;
+    border: 1px solid darkgray;
+    border-radius: 32px;
+    text-align: center;
+    font-size: 16px;
+}
+.middle_case .middle_case_LEDlightingBtn {
+    margin: -45px 0px 0px 470px;
+}
+.middle_case .middle_case_smartTrafficBtn {
+    margin: 20px 0px 0px 315px;
+}
+.middle_case .middle_case_smartSystemBtn {
+    margin: -45px 0px 0px 470px;
+}
+.middle_case .middle_case_title {
+    background: #0000;
+    font-size: 22px;
+    margin: 50px 0px 0px 315px;
+    width: 430px;
+}
+.middle_case .middle_case_title a,
+.middle_case_learnMore a{
+    color: #1C6AC3;
+    text-decoration: none;
+}
+.middle_case .middle_case_content {
+    background: #0000;
+    margin: 50px 0px 0px 315px;
+    width: 430px;
+}
+.middle_case .middle_case_learnMore {
+    /*background: gray;*/
+    margin: 30px 0px 0px 315px;
+}
+.middle_case .middle_case_rightImg {
+    margin: -530px 0px 0px 820px;
+    padding: 0px 0px 150px 0px;
+}
+/*.middle_case .middle_case_rightImg img[src]{*/
+/*    width: 748px;*/
+/*    height: 527px;*/
+/*}*/
+/*中间内容2：行业解决方案*/
+.middle_solutions {
+    /*background: orange;*/
+    margin: -18px 0px 0px 0px;
+}
+.middle_solutions .middle_solutions_left {
+    /*background: yellow;*/
+    width: 50%;
+    /*height: 623px;*/
+    height: 619px;
+}
+.middle_solutions .middle_solutions_left .middle_solutions_left_img img[src] {
+    width: 100%;
+}
+.middle_solutions .middle_solutions_left .middle_solutions_left_prevBtn {
+    margin: -78px 0px 0px 0px;
+    text-align: right;
+}
+.middle_solutions .middle_solutions_right {
+    background: #003F82FF;
+    width: 50%;
+    float: right;
+    margin: -619px 0px 0px 0px;
+    height: 619px;
+}
+.middle_solutions .middle_solutions_right .middle_solutions_right_titleHead {
+    margin: 160px 0px 0px 80px;
+    color: white;
+    font-size: 32px;
+}
+.middle_solutions .middle_solutions_right .middle_solutions_right_title {
+    font-size: 22px;
+    margin: 50px 0px 0px 80px;
+    width: 430px;
+    color: white;
+}
+.middle_solutions .middle_solutions_right .middle_solutions_right_title a,
+.middle_solutions_right_learnMore a{
+    color: white;
+    text-decoration: none;
+}
+.middle_solutions .middle_solutions_right .middle_solutions_right_content {
+    margin: 50px 0px 0px 80px;
+    width: 430px;
+    color: white;
+}
+.middle_solutions .middle_solutions_right .middle_solutions_right_learnMore {
+    margin: 30px 0px 0px 80px;
+    background: #F98632FF;
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.middle_solutions .middle_solutions_right .middle_solutions_right_nextBtn {
+    margin: 46px 0px 0px 0px;
+    /*padding: 46px 0px 0px 0px;*/
+    /*padding: 0px 0px 0px 0px;*/
+    /*float: bottom;*/
+    /*position: fixed;*/
+}
+/*中间内容3：品质*/
+.middle_quality {
+    background: white;
+    /*margin: 0px 0px 0px 0px;*/
+}
+.middle_quality .middle_quality_top { /*上边*/
+    /*background: yellow;*/
+    /*margin: 0px 0px 0px 0px;*/
+}
+.middle_quality .middle_quality_top .middle_quality_top_titleHead {
+    /*background: gray;*/
+    color: #0C2542FF;
+    margin: -18px 0px 0px 15%;
+    padding: 50px 0px 0px 0px;
+    font-size: 32px;
+    text-align: center;
+    width: 70%;
+}
+.middle_quality .middle_quality_top .middle_quality_top_content {
+    width: 70%;
+    margin: 50px 0px 0px 15%;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+}
+.middle_quality .middle_quality_left { /*左边*/
+    /*background: green;*/
+    width: 70%;
+    margin: 50px 0px 0px 15%;
+}
+.middle_quality .middle_quality_left .middle_quality_left_smartShowImg {
+    /*margin: 0px 0px 0px 0px;*/
+    margin: 0px 0px 30px 0px;
+    padding: 0px 0px 15px 0px;
+    width: 878px;
+    /*height: 330px; !*图片默认大小是330*!*/
+    height: 310px;
+}
+.middle_quality .middle_quality_left .middle_quality_left_smartTraffic{
+    margin: 0px 0px 0px 0px;
+    width: 429px;
+    height: 330px;
+}
+.middle_quality .middle_quality_left .middle_quality_left_LEDlighting {
+    margin: -333px 0px 0px 450px;
+    width: 427px;
+    height: 330px;
+}
+.middle_quality .middle_quality_right { /*右边*/
+    width: 30%;
+    margin: -683px 0px 0px 1180px;
+    padding: 0px 0px 100px 0px;
+}
+.middle_quality .middle_quality_right .middle_quality_right_smartSystemImg {
+    width: 377px;
+    height: 680px;
+}
+
+.middle_quality .middle_quality_left .middle_quality_left_smartShowImg:hover,
+.middle_quality_left_smartTraffic:hover,
+.middle_quality_left_LEDlighting:hover,
+.middle_quality_right_smartSystemImg:hover { /*功能：鼠标放在元素上的选中效果*/
+    transform: translate3d(0, -5px, 0); /*运动的方向尺寸*/
+    box-shadow: 0 10px 50px rgba(0, 0 , 0, 0.9); /*背影的尺寸*/
+    z-index: 20; /*未知*/
+}
+
+/*中间内容4：新闻中心*/
+.middle_news {
+    background: rgb(232 233 238);
+    width: 70%;
+    margin: 0px 0px 120px 15%;
+}
+.middle_news .middle_news_top { /*上边*/
+
+}
+.middle_news .middle_news_top_titleHead {
+    color: #0C2542FF;
+    margin: -18px 0px 0px 10px;
+    padding: 50px 0px 0px 0px;
+    font-size: 32px;
+    text-align: center;
+}
+.middle_news .middle_news_top .middle_news_top_companyDynamic {
+    margin: 0px 0px 0px 385px;
+    background: #003C87FF;
+    color: white;
+    width: 140px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 22px;
+}
+.middle_news .middle_news_top .middle_news_top_industryInformation,
+.middle_news_top_marketingActivity,
+.middle_news_top_commonProblem {
+    margin: -44px 0px 0px 545px;
+    background: white;
+    color: gray;
+    width: 140px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 22px;
+}
+.middle_news .middle_news_top .middle_news_top_marketingActivity {
+    margin-left: 705px;
+}
+.middle_news .middle_news_top .middle_news_top_commonProblem {
+    margin-left: 865px;
+}
+.middle_news .middle_news_left { /*左边*/
+    /*background: yellow;*/
+    width: 50%;
+    text-align: right;
+    height: 421px;
+}
+.middle_news .middle_news_left .middle_news_left_image {
+    margin-top: 60px;
+    padding: 0px 0px 0px 0px;
+}
+.middle_news .middle_news_left .middle_news_left_title {
+    /*margin: -50px 140px 0px 100px;*/
+    margin: -48px 100px 0px 100px;
+    /*padding: 0px 0px 0px 0px;*/
+    /*color: red;*/
+    background: gray;
+    /*background-color: cyan;*/
+    text-align: left;
+    /*color: white;*/
+    /*padding: 0px 0px 0px 0px;*/
+    /*width: 360px;*/
+    height: 44px;
+    line-height: 44px;
+    display: block;
+    overflow: hidden; /*超过会隐藏*/
+    text-overflow: ellipsis; /*超出的部分用省略号表示，好像是无效的，针对的是p元素，切换成label即可*/
+    /*-ms-text-overflow: ellipsis;*/
+    white-space: nowrap; /*文字显示一行，但是却不会隐藏多余部分*/
+}
+.middle_news .middle_news_left .middle_news_left_more {
+    background: orange;
+    /*width: 100px;*/
+    line-height: 44px;
+    text-align: right;
+    /*margin: -10px 0px 0px 0px;*/
+    margin: -44px 30px 0px 100px;
+    /*float: right;*/
+    /*color: white;*/
+}
+.middle_news .middle_news_right { /*右边*/
+    /*background: cyan;*/
+    float: right;
+    margin: -422px 0px 0px 0px;
+    width: 50%;
+    height: 421px;
+}
+
+.middle_news .middle_news_right ul {
+    background: white;
+    list-style-type: none;
+    /*height: 100px;*/
+    margin: 0px 0px 4px 0px;
+    /*padding: 50px 0px 0px 0px;*/
+}
+.middle_news .middle_news_right ul li:nth-child(1){
+    color: black;
+    /*margin: -16px 0px 0px 0px;*/
+    /*margin: -10px 0px 0px 0px;*/
+    padding: 30px 0px 0px 0px;
+    /*background: orange;*/
+    width: 450px;
+    /*width: 500px;*/
+    font-size: 18px;
+}
+.middle_news .middle_news_right ul li:nth-child(2){
+    color: gray;
+    float: right;
+    margin: -15px 50px 0px 0px;
+    /*padding: 0px 0px 0px 0px;*/
+}
+.middle_news .middle_news_right ul li:nth-child(3){
+    color: gray;
+    margin: 15px 50px 0px 0px;
+    padding: 0px 0px 20px 0px;
+    width: 450px;
+    /*background: orange;*/
+}
+.middle_news .middle_news_right ul a{
+    text-decoration: none;
+}
+
+/*底部模块*/
+.bottom {
+    background: rgb(12 37 66);
+    margin-top: -18px;
+    margin-bottom: -16px;
+}
+.bottom .bottom_leftContent {/*底部左边模块*/
+    background: #0000;
+    width: 67%;
+    height: 400px;
+}
+/*更改原先布局，此处放弃*/
+/*.bottom .bottom_leftContent .bottom_leftContent_nav {*/
+/*    float: left;*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*    background: #0000;*/
+/*    margin: 10px 0px -50px 100px;*/
+/*    padding: 0px;*/
+/*    list-style-type: none;*/
+/*}*/
+/*.bottom .bottom_leftContent .bottom_leftContent_nav li {*/
+/*    float: left;*/
+/*    padding-right: 50px;*/
+/*}*/
+.bottom .bottom_leftContent .bottom_leftContent_nav {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+.bottom .bottom_leftContent .bottom_leftContent_smartShow{
+    list-style-type: none;
+    margin: 0px 0px 0px 314px;
+    padding: 25px 0px 0px 0px;
+    /*line-height: 30px;*/ /*列表每个元素的间距*/
+}
+.bottom .bottom_leftContent .bottom_leftContent_LEDlighting{
+    list-style-type: none;
+    margin: -189px 0px 0px 474px;
+    padding: 25px 0px 0px 0px;
+}
+.bottom .bottom_leftContent .bottom_leftContent_smartTraffic{
+    list-style-type: none;
+    margin: -273px 0px 0px 584px;
+    padding: 50px 0px 0px 0px;
+}
+.bottom .bottom_leftContent .bottom_leftContent_smartSystem{
+    list-style-type: none;
+    margin: -213px 0px 0px 704px;
+    padding: 50px 0px 0px 0px;
+}
+.bottom .bottom_leftContent .bottom_leftContent_industrySolution{
+    list-style-type: none;
+    margin: -113px 0px 0px 804px;
+    padding: 50px 0px 0px 0px;
+}
+.bottom .bottom_leftContent .bottom_leftContent_caseShow{
+    list-style-type: none;
+    margin: -173px 0px 0px 934px;
+    padding: 50px 0px 0px 0px;
+}
+.bottom .bottom_leftContent .bottom_leftContent_serviceSupport{
+    list-style-type: none;
+    margin: -173px 0px 0px 1034px;
+    padding: 50px 0px 0px 0px;
+}
+.bottom .bottom_leftContent .bottom_leftContent_about{
+    list-style-type: none;
+    margin: -193px 0px 0px 1134px;
+    padding: 50px 0px 0px 0px;
+}
+.bottom .bottom_leftContent .bottom_leftContent_smartShow li:first-child,
+.bottom_leftContent_LEDlighting li:first-child,
+.bottom_leftContent_smartTraffic li:first-child,
+.bottom_leftContent_smartSystem li:first-child,
+.bottom_leftContent_industrySolution li:first-child,
+.bottom_leftContent_caseShow li:first-child,
+.bottom_leftContent_serviceSupport li:first-child,
+.bottom_leftContent_about li:first-child{ /*:nth-child(1) */
+    color: white;
+    margin: 0px 0px 20px 0px;
+    /*padding: 0px 0px 0px 0px;*/
+    font-size: 16px;
+}
+.bottom .bottom_leftContent .bottom_leftContent_smartShow li{
+
+}
+.bottom .bottom_leftContent .bottom_leftContent_smartShow li a,
+.bottom_leftContent_LEDlighting li a,
+.bottom_leftContent_smartTraffic li a,
+.bottom_leftContent_smartSystem li a,
+.bottom_leftContent_industrySolution li a,
+.bottom_leftContent_caseShow li a,
+.bottom_leftContent_serviceSupport li a,
+.bottom_leftContent_about a{
+    text-decoration: none;
+    color: navajowhite;
+    font-size: 14px;
+}
+.bottom .bottom_rightContactUs {/*底部右边模块*/
+    background: #0000;
+    width: 33%;
+    margin: -400px 0px 0px 0px;
+    float: right;
+    /*text-align: right;*/
+    border-left: 1px solid antiquewhite;
+}
+.bottom .bottom_rightContactUs .bottom_rightContactUs_contactUs,
+.bottom_rightContactUs_adress,
+.bottom_rightContactUs_fax,
+.bottom_rightContactUs_email,
+.bottom_rightContactUs_dhImg,
+.bottom_rightContactUs_dh1Img,
+.bottom_rightContactUs_weiBo{
+    margin: 0px 0px 0px 20px;
+    color: white;
+    font-size: 16px;
+}
+.bottom .bottom_rightContactUs .bottom_rightContactUs_contactUs {
+    font-size: 26px;
+}
+.bottom .bottom_rightContactUs .bottom_rightContactUs_dh,
+.bottom_rightContactUs_dh1{
+    color: white;
+    font-size: 30px;
+    margin: -65px 0px 0px 60px;
+}
+.bottom .bottom_rightContactUs .bottom_rightContactUs_weiBo {
+    width: 45px;
+}
+.bottom .bottom_rightContactUs .bottom_rightContactUs_qqKongJian {
+    width: 45px;
+    margin: -49px 0px 0px 88px;
+}
+.bottom .bottom_rightContactUs .bottom_rightContactUs_youKu {
+    width: 45px;
+    margin: -49px 0px 0px 156px;
+}
+.bottom .bottom_rightContactUs .bottom_rightContactUs_weiXin {
+    width: 45px;
+    margin: -49px 0px 20px 222px;
+}
+.bottom .bottom_bottomContent {/*底部下边模块*/
+    background: rgb(5 28 55);
+}
+.bottom .bottom_bottomContent .bottom_bottomContent_friendlyLink {/*友情链接*/
+    text-align: center;
+    color: white;
+    background: #0000;
+    margin: 20px 0px 0px 300px;
+    padding: 0px;
+    list-style-type: none;
+    float: left;
+}
+.bottom .bottom_bottomContent .bottom_bottomContent_friendlyLink li{
+    padding-right: 20px;
+    float: left;
+}
+.bottom .bottom_bottomContent .bottom_bottomContent_friendlyLink a{
+    color: navajowhite;
+    text-decoration: none;
+}
+.bottom .bottom_bottomContent .bottom_bottomContent_copyright {/*版权*/
+    text-align: center;
+    color: white;
+    padding: 20px 0px 20px 0px;
+}
+.bottom .bottom_bottomContent .bottom_bottomContent_copyright a{
+    color: navajowhite;
+    text-decoration: none;
+}
